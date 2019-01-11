@@ -22,5 +22,5 @@ bin/
 *.log
 *.tlog
 build
-android_build
+android_build/*
 !android_build/build.sh
