@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/masashi/Documents/workspace/opencv/3rdparty/cpufeatures/cpu-features.c
+cpu-features.h
+/Users/masashi/Documents/workspace/opencv/3rdparty/cpufeatures/cpu-features.h
+dlfcn.h
+-
+errno.h
+-
+fcntl.h
+-
+pthread.h
+-
+stdio.h
+-
+stdlib.h
+-
+sys/system_properties.h
+-
+unistd.h
+-
+
+/Users/masashi/Documents/workspace/opencv/3rdparty/cpufeatures/cpu-features.h
+sys/cdefs.h
+-
+stdint.h
+-
+string.h
+-
+
