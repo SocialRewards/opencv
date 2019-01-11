@@ -35,8 +35,8 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE=../platforms/android/android.toolchain.cmake \
     -DOPENCL_FOUND=ON \
     -DWITH_OPENCL=ON \
     -DHAVE_OPENCL_STATIC=ON \
-    -DOPENCL_LIBRARY=$(pwd)/../../libopencl-stub/libOpenCL.so \
-    -DOPENCL_INCLUDE_DIRS=$(pwd)/../../libopencl-stub/include
+    -DOPENCL_LIBRARY=$(pwd)/../libopencl-stub/libOpenCL.so \
+    -DOPENCL_INCLUDE_DIRS=$(pwd)/../libopencl-stub/include
 
 cmake -LA
 make -j4
