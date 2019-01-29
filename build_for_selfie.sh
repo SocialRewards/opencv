@@ -4,7 +4,7 @@ if [ ! -d "./android_build/" ]; then
   mkdir android_build
 fi
 if [ ! -d "./build/" ]; then
-  mkdir android_build_work
+  mkdir build
 fi
 
 cd build
