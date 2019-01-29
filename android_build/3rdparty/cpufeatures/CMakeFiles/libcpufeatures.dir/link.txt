@@ -1,2 +1,0 @@
-/Users/masashi/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ar qc ../lib/armeabi-v7a/libcpufeatures.a  CMakeFiles/libcpufeatures.dir/cpu-features.c.o
-/Users/masashi/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64/bin/arm-linux-androideabi-ranlib ../lib/armeabi-v7a/libcpufeatures.a
