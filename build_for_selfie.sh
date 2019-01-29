@@ -1,5 +1,14 @@
 #!/bin/bash
 
+if [ ! -d "./android_build/" ]; then
+  mkdir android_build
+fi
+if [ ! -d "./build/" ]; then
+  mkdir android_build_work
+fi
+
+cd build
+
 cmake .. \
     -DCMAKE_TOOLCHAIN_FILE=../platforms/android/android.toolchain.cmake \
     -DBUILD_DOCS=OFF \
@@ -28,7 +37,7 @@ cmake .. \
     -DBUILD_opencv_stiching=OFF \
     -DBUILD_opencv_videoio=OFF \
     -DBUILD_opencv_highgui=OFF \
-    -DCMAKE_INSTALL_PREFIX:PATH=$(pwd)/out \
+    -DCMAKE_INSTALL_PREFIX:PATH=$(pwd)/../android_build/out \
     -DWITH_CUDA=OFF \
     -DWITH_TBB=OFF \
     -DHAVE_OPENCL=ON \
