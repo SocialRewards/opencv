@@ -35,6 +35,66 @@ set_target_properties(opencv_imgproc PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS opencv_imgproc )
 list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_imgproc "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_imgproc.so" )
 
+# Import target "opencv_ml" for configuration "Release"
+set_property(TARGET opencv_ml APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_ml PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_ml.so"
+  IMPORTED_SONAME_RELEASE "libopencv_ml.so"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_ml )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_ml "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_ml.so" )
+
+# Import target "opencv_photo" for configuration "Release"
+set_property(TARGET opencv_photo APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_photo PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_photo.so"
+  IMPORTED_SONAME_RELEASE "libopencv_photo.so"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_photo )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_photo "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_photo.so" )
+
+# Import target "opencv_dnn" for configuration "Release"
+set_property(TARGET opencv_dnn APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_dnn PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_dnn.so"
+  IMPORTED_SONAME_RELEASE "libopencv_dnn.so"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_dnn )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_dnn "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_dnn.so" )
+
+# Import target "opencv_imgcodecs" for configuration "Release"
+set_property(TARGET opencv_imgcodecs APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_imgcodecs PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_imgcodecs.so"
+  IMPORTED_SONAME_RELEASE "libopencv_imgcodecs.so"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_imgcodecs )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_imgcodecs "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_imgcodecs.so" )
+
+# Import target "opencv_videoio" for configuration "Release"
+set_property(TARGET opencv_videoio APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_videoio PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_videoio.so"
+  IMPORTED_SONAME_RELEASE "libopencv_videoio.so"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_videoio )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_videoio "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_videoio.so" )
+
+# Import target "opencv_highgui" for configuration "Release"
+set_property(TARGET opencv_highgui APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(opencv_highgui PROPERTIES
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_highgui.so"
+  IMPORTED_SONAME_RELEASE "libopencv_highgui.so"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS opencv_highgui )
+list(APPEND _IMPORT_CHECK_FILES_FOR_opencv_highgui "${_IMPORT_PREFIX}/sdk/native/libs/armeabi-v7a/libopencv_highgui.so" )
+
 # Import target "opencv_features2d" for configuration "Release"
 set_property(TARGET opencv_features2d APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(opencv_features2d PROPERTIES
